@@ -1,2 +1,168 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap')
+
+//Common styles
+*
+    margin: 0
+    padding: 0
+    font-family: "Josefin Sans" ,sans-serif
+    outline: none
+
+html
+    //16px to 10px
+    font-size: 62.5%
+
+body
+    background-color: #f0f8fd
+//end of Common styles
+
+//Main page
+.main-page
+    width: 100%
+    height: 100vh
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    grid-template-rows: 1fr min-content
+
+//left
+.left
+    grid-column: 1/2
+    grid-row: 1/2
+    background-color: #1aa1f5
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &-content
+        div
+            display: flex
+            align-items: center
+            margin: 4rem
+            color: #fff
+        i
+            font-size: 3rem
+            margin-right: 2rem
+
+        &-heading
+            font-size: 2rem
+
+//end of left
+
+//right
+.right
+    grid-column: 2 /-1
+    grid-row: 1 / 2
+    position: relative
+
+    &-content-form
+        display: flex
+        justify-content: center
+        margin-top: 3rem
+
+        input
+            width: 20rem
+            height: 4.5rem
+            margin-right: 1rem
+            font-size: 1.6rem
+            padding: 0 1rem
+            border: .1rem solid #ddd
+            border-radius: .5rem
+            background-color: #fff
+            transition: background-color .3s
+
+            &:focus
+                background-color: #d9ebf7
+                outline: none
+
+        div
+            position: relative
+
+        label
+            position: absolute
+            top: 5.5rem
+            left: 0
+            font-size: 1.6rem
+            font-weight: 300
+            color: #a7a6a6
+
+.btn-top
+    width: 8rem
+    background-color: #fff
+    color: #1aa1f5
+    border: .1rem solid #1aa1f5
+    border-radius: 3rem
+    font-size: 1.4rem
+    font-weight: bold
+    cursor: pointer
+    transition: background-color .3s
+
+    &:hover
+        background-color: #d9ebf7
+
+.middle-content
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: flex
+    flex-direction: column
+    width: 40%
+
+    i
+        font-size: 4rem
+        color: #1aa1f5
+        margin-bottom: 2rem
+
+    h1
+        font-size: 2.8rem
+        margin-bottom: 4rem
+        line-height: 4rem
+
+    h4
+        font-size: 2rem
+        margin-bottom: 2rem
+
+    button
+        margin: .8rem 0
+        padding: .5rem
+        border: .1rem solid #1aa1f5
+        border-radius: 4rem
+        font-size: 1.6rem
+        cursor: pointer
+        transition: background-color .3s
+
+.sign-up
+    background-color: #1aa1f5
+    color: #fff
+    &:hover
+        background-color: #0f5d8d
+
+.log-in
+    background-color: #fff
+    &:hover
+        background-color: #d9ebf7
+//end of right
+
+//footer
+.main-page-footer
+    grid-column: 1 / -1
+    grid-row: 2 / -1
+    background-color: #f5f4f4
+    padding: 1.5rem
+    border-top: .1rem solid #ddd
+
+    ul
+        display: flex
+        justify-content: center
+        list-style-type: none
+
+    a
+        font-size: 1.6rem
+        margin: 0 2rem
+        text-decoration: none
+        color: #444
+        font-weight: 300
+
+//end of footer
+
+//end of Main page
