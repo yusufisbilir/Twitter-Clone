@@ -165,4 +165,32 @@ body
 
 //end of footer
 
+//Login page
+.login-page
+    width: 100%
+    height: 100vh
+    display: grid
+    //minmax = greater than or equal to min and less than or equal to max.
+    grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr)
+    grid-template-rows: repeat(2, min-content) 1fr
+    grid-row-gap: 1.5rem
+
+//login page nav
+.login-page-nav
+    grid-column: 1/-1
+    grid-row: 1/2
+    background-color: #fff
+    padding: 2.5rem 0
+//end of login page nav
+
+//login
+.login
+    grid-column: 2/3
+    grid-row: 2/3
+    background-color: #fff
+    width: 100rem
+//end of login
+
+//end of Login page
+
 //end of Main page
