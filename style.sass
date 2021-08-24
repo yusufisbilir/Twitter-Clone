@@ -16,7 +16,6 @@ body
     background-color: #f0f8fd
 //end of Common styles
 
-//Main page
 .main-page
     width: 100%
     height: 100vh
@@ -169,7 +168,7 @@ body
 .login-page
     width: 100%
     height: 100vh
-    display: grid
+    display: none
     //minmax = greater than or equal to min and less than or equal to max.
     grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr)
     grid-template-rows: repeat(2, min-content) 1fr
@@ -308,4 +307,258 @@ body
 
 //end of Login page
 
-//end of Main page
+// feeds page
+.feeds-page
+    width: 100%
+    height: 100vh
+
+    //feeds nav
+.feeds-nav
+    position: fixed
+    width: 100%
+    height: 6.5rem
+    background-color: #fff
+    display: flex
+    justify-content: center
+    box-shadow: 0 0 .7rem rgba(0,0,0,.3)
+
+.icons
+    display: flex
+    align-items: center
+    a
+        text-decoration: none
+        margin-right: 7rem
+        font-size: 2.5rem
+        color: #9e9a9a
+    .active
+        color: #1aa1f5
+
+.search-bar
+    display: flex
+    align-items: center
+    position: relative
+    i
+        position: absolute
+        font-size: 1.6rem
+        left: 1.5rem
+        color: #9e9a9e
+
+.search-bar-input
+    width: 35rem
+    height: 3rem
+    border: .1rem solid #d6e1e9
+    border-radius: 3rem
+    background-color: #d6e1e9
+    padding-left: 5rem
+    transition: all .3s
+    &:focus
+        background-color: #fff
+        border-color: #1aa1f5
+
+.user
+    margin-left: 3rem
+    display: flex
+    cursor: pointer
+    align-items: center
+    i
+        color: #444
+        font-size: 1.8rem
+
+.user-img-wrapper
+    width: 4rem
+    height: 4rem
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 50%
+
+.user-link
+    margin: 0 1rem
+    text-decoration: none
+    font-size: 1.8rem
+    color: #444
+    //end of  feeds nav
+
+    //feeds content
+.feeds-content
+    display: grid
+    grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr)
+    grid-template-rows: repeat(2, min-content)
+    padding-top: 6.5rem
+
+.feeds-header
+    grid-column: 2/3
+    grid-row: 1/2
+    background-color: #fff
+    margin-top: 1.5rem
+
+.header-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-bottom: .1rem solid #eee
+    padding: 1.5rem
+    h4
+        font-size: 2.2rem
+    i
+        font-size: 2rem
+        color: #1aa1f5
+.header-post
+    display: flex
+    align-items: center
+    padding: 1rem
+    border-bottom: .1rem solid #eee
+    input
+        width: 35rem
+        height: 3rem
+        border: .1rem solid #d6e1e9
+        border-radius: 3rem
+        background-color: #d6e1e9
+        padding: .4rem 1.5rem
+    i
+        font-size: 2.5rem
+        color: #1aa1f5
+        margin: 1rem
+
+.header-img-wrapper
+    width: 4rem
+    height: 4rem
+    margin-right: 1.5rem
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 50%
+
+.posts
+    grid-column: 2/3
+    grid-row: 2/-1
+    background-color: #fff
+
+.post
+    display: flex
+    padding: 1.5rem
+    border-bottom: .1rem solid #eee
+
+.user-avatar
+    width: 6rem
+    height: 6rem
+    flex-shrink: 0
+    margin-right: 1.5rem
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 50%
+
+.post-user-info
+    display: flex
+    align-items: center
+    margin: 1rem 0
+    h4
+        font-size: 1.6rem
+        margin-right: .5rem
+    i
+        font-size: 1.6rem
+        color: #1aa1f5
+        margin-right: .5rem
+    span
+        font-size: 1.6rem
+
+.post-text
+    font-size: 1.6rem
+    margin-bottom: 1rem
+
+.post-icons
+    margin-top: 1rem
+    i
+        font-size: 1.8rem
+        color: #868383
+        margin-right: 6rem
+
+.post-img
+    width: 48rem
+    height: 30rem
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 1rem
+
+.follow
+    position: fixed
+    top: 8rem
+    left: 60%
+    background-color: #fff
+    width: 35rem
+    &-user-img
+        width: 6rem
+        height: 6rem
+        margin-right: 2rem
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 50%
+    &-heading
+        padding: 1rem
+        font-size: 1.8rem
+        border-bottom: .1rem solid #eee
+    &-user
+        display: flex
+        align-items: center
+        padding: 1.5rem
+        border-bottom: .1rem solid #eee
+        &-info
+            h4,p
+                font-size: 1.6rem
+                margin-bottom: .5rem
+    &-btn
+        margin-left: auto
+        width: 9rem
+        background-color: #fff
+        color: #1aa1f5
+        padding: .7rem .5rem
+        border: .1rem solid #1aa1f5
+        border-radius: 2rem
+        cursor: pointer
+        font-size: 1.6rem
+
+    &-link
+        margin: 2rem 1rem
+        a
+            text-decoration: none
+            color: #1aa1f5
+            font-size: 1.5rem
+    &-footer
+        background-color: #f0f8fd
+        ul
+            list-style: none
+            display: flex
+            padding: 2rem 0
+        a
+            text-decoration: none
+            font-size: 1.5rem
+            color: #868383
+            margin: 0 .7rem
+    //end of feeds content
+
+.post-btn
+    position: fixed
+    bottom: 2rem
+    left: 70%
+    width: 12rem
+    padding: 1.5rem 1rem
+    background-color: #1aa1f5
+    color: #fff
+    font-size: 2rem
+    border: .1rem solid #1aa1f5
+    cursor: pointer
+    border-radius: 3rem
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.3)
+    transition: background-color .3s
+    &:hover
+        background-color: #117abb
+
+// end of feeds page
