@@ -63,8 +63,12 @@
                     <i class="fas fa-dove"></i>
                     <h1>Explore what's happening in the world</h1>
                     <h4>Join Twitter today</h4>
-                    <button type="button" class="sign-up">Sign Up</button>
-                    <button type="button" class="log-in">Log in</button>
+                    <button type="button" class="sign-up main-btn">
+                        Sign Up
+                    </button>
+                    <button type="button" class="log-in main-btn">
+                        Log in
+                    </button>
                 </div>
             </div>
             <!-- end of right -->
@@ -116,8 +120,13 @@
                         <input
                             type="text"
                             placeholder="Phone, email or username"
+                            class="login-user-info"
                         />
-                        <input type="password" placeholder="Password" />
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            class="login-password"
+                        />
                         <div>
                             <button type="button" class="login-form-btn">
                                 Log in
@@ -142,6 +151,16 @@
                 </footer>
             </div>
             <!-- end of login -->
+
+            <!-- login modal -->
+            <div class="login-modal">
+                <i class="fas fa-times"></i>
+                <p>
+                    The username and password you entered did not match our
+                    records. Please double check and try again.
+                </p>
+            </div>
+            <!-- end of login modal -->
         </section>
         <!-- End of Log in page -->
 
@@ -369,15 +388,14 @@
                     </footer>
                 </div>
             </div>
+            <button type="button" class="post-btn">
+                +
+                <i class="fas fa-feather-alt"></i>
+                post
+            </button>
         </seciton>
 
         <!-- end of Feeds content -->
-
-        <button type="button" class="post-btn">
-            +
-            <i class="fas fa-feather-alt"></i>
-            post
-        </button>
 
         <!-- End of feeds page -->
 
