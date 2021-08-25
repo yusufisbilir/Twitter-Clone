@@ -589,4 +589,94 @@ body
     &:hover
         background-color: #117abb
 
+    //post modal
+.modal-wrapper
+    position: fixed
+    background-color: rgba(0,0,0,.5)
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    opacity: 0
+    visibility: hidden
+
+.modal
+    width: 60rem
+    background-color: #fff
+    position: absolute
+    top: 25%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 1.5rem
+    display: none
+    &-header
+        padding: 1.5rem 2.5rem
+        display: flex
+        align-items: center
+        border-bottom: .1rem solid #eee
+        i
+            font-size: 2.3rem
+            color: #1aa1f5
+            cursor: pointer
+        button
+            margin-left: auto
+            width: 8rem
+            padding: .8rem .5rem
+            background-color: #1aa1f5
+            color: #fff
+            font-size: 1.6rem
+            border: .1rem solid #1aa1f5
+            border-radius: 3rem
+            opacity: .5
+    &-body
+        display: flex
+        padding: 2rem 1.5rem 1rem 1.5rem
+        i
+            position: absolute
+            bottom: 8.5rem
+            right: 2.8rem
+            font-size: 2rem
+            color: #1aa1f5
+    &-img
+        width: 4rem
+        height: 4rem
+        margin-right: 1.5rem
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 50%
+    &-input
+        width: 60rem
+        padding: 1rem 0 8rem 1rem
+        background-color: #d6e1e9
+        border: .1rem solid #eee
+        border-radius: 1.5rem
+        font-size: 1.6rem
+        transition: all .3s
+        &:focus
+            background-color: #fff
+            border-color: #1aa1f5
+    &-footer
+        padding: 0 2rem 2rem 8rem
+    &-icons
+        display: flex
+        align-items: center
+        i
+            margin-right: 2rem
+            font-size: 2.7rem
+            color: #1aa1f5
+        span
+            margin-left: auto
+            font-size: 5rem
+            width: 4rem
+            height: 4rem
+            border: .1rem solid #1aa1f5
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #1aa1f5
+            opacity: .5
+    //end of post modal
 // end of feeds page
