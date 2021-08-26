@@ -679,4 +679,94 @@ body
             color: #1aa1f5
             opacity: .5
     //end of post modal
+
+    //Sidebar
+.sidebar-wrapper
+    position: fixed
+    background-color: rgba(0, 0, 0, .5)
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.sidebar
+    position: fixed
+    top: 0
+    right: 0
+    width: 30rem
+    height: 100vh
+    background-color: #fff
+    padding: 2.5rem
+    box-sizing: border-box
+    box-shadow: -.1rem 0 .5rem rgba(0, 0, 0, .3)
+    &-header
+        display: flex
+        align-items: center
+        padding-bottom: 1.5rem
+        border-bottom: .1rem solid #eee
+        h2
+            font-size: 2rem
+        i
+            margin-left: auto
+            font-size: 2.5rem
+            color: #1aa1f5
+            cursor: pointer
+    &-user
+        display: flex
+        align-items: center
+        padding-top: 1.5rem
+        &-img
+            width: 4rem
+            height: 4rem
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                border-radius: 50%
+        span
+            margin-left: auto
+            width: 3.5rem
+            height: 3.5rem
+            font-size: 5rem
+            border: .1rem solid #1aa1f5
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #1aa1f5
+        &-info
+            padding: 1.5rem 0
+            font-size: 1.8rem
+            h4
+                margin-bottom: .5rem
+.following
+    display: flex
+    padding: 1.5rem 0
+    &-paragraph
+        font-size: 1.8rem
+        &:first-child
+            margin-right: 2.5rem
+        span
+            font-weight: bold
+
+@mixin list
+    ul
+        list-style: none
+        padding: 1.5rem 0
+    li
+        margin-bottom: 2.5rem
+    a
+        text-decoration: none
+        font-size: 1.6rem
+        color: #868383
+    i
+        margin-right: 1rem
+.sidebar-list-1
+    @include list
+    border-bottom: .1rem solid #eee
+.sidebar-list-2
+    @include list
+    ul
+        padding: 3rem 0
+    //end of Sidebar
 // end of feeds page
