@@ -973,12 +973,21 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sidebar-wrapper-display {
+  opacity: 1;
+  visibility: visible;
 }
 
 .sidebar {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -30rem;
   width: 30rem;
   height: 100vh;
   background-color: #fff;
@@ -987,6 +996,8 @@ body {
           box-sizing: border-box;
   -webkit-box-shadow: -0.1rem 0 0.5rem rgba(0, 0, 0, 0.3);
           box-shadow: -0.1rem 0 0.5rem rgba(0, 0, 0, 0.3);
+  -webkit-transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+  transition: right 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
 .sidebar-header {
@@ -1060,6 +1071,10 @@ body {
 
 .sidebar-user-info h4 {
   margin-bottom: .5rem;
+}
+
+.sidebar-display {
+  right: 0;
 }
 
 .following {

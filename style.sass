@@ -688,17 +688,25 @@ body
     bottom: 0
     left: 0
     right: 0
+    opacity: 0
+    visibility: hidden
+    transition: all .5s
+
+.sidebar-wrapper-display
+    opacity: 1
+    visibility: visible
 
 .sidebar
     position: fixed
     top: 0
-    right: 0
+    right: -30rem
     width: 30rem
     height: 100vh
     background-color: #fff
     padding: 2.5rem
     box-sizing: border-box
     box-shadow: -.1rem 0 .5rem rgba(0, 0, 0, .3)
+    transition: right .5s cubic-bezier(1,0,0,1)
     &-header
         display: flex
         align-items: center
@@ -739,6 +747,10 @@ body
             font-size: 1.8rem
             h4
                 margin-bottom: .5rem
+
+.sidebar-display
+    right: 0
+
 .following
     display: flex
     padding: 1.5rem 0
